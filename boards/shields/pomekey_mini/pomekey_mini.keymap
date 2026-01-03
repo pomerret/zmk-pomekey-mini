@@ -72,7 +72,7 @@
                 &trans           &trans           &trans           &trans           &trans                     &trans           &trans           &trans           &trans           &bootloader
                 &trans           &trans           &trans           &trans           &trans                     &trans           &trans           &trans           &trans           &trans
                 &trans           &trans           &trans           &trans           &trans                     &trans           &trans           &trans           &trans           &trans
-                &trans           &trans           &trans           &trans           &trans                     &trans           &trans           &trans           &trans           &trans
+                &bt BT_CLR_ALL   &trans           &trans           &trans           &trans                     &trans           &trans           &trans           &trans           &sys_reset
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
