@@ -1,4 +1,4 @@
 # This file generates the GitHub Actions matrix.
 
-board: [ "seeed_xiao_nrf52840" ]
+board: [ "xiao_ble" ]
 shield: [ "pomekey_mini_left", "pomekey_mini_right" ]
