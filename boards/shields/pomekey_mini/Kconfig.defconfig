@@ -12,7 +12,12 @@ config ZMK_SPLIT
 config ZMK_POINTING
     default y
 
-# If using PAW3222 driver
+config KSCAN
+    default y
+
+config ZMK_KSCAN_CHARLIEPLEX
+    default y
+
 config PAW3222
     default y
 
