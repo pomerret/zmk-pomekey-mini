@@ -1,0 +1,27 @@
+#include "pomekey_mini.dtsi"
+
+&kscan0 {
+    gpios
+        = <&gpio0 10 GPIO_ACTIVE_HIGH>  // GPIO5
+        , <&xiao_d 1 GPIO_ACTIVE_HIGH>   // GPIO4 (D1)
+        , <&xiao_d 3 GPIO_ACTIVE_HIGH>   // GPIO3 (D3)
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH>   // GPIO2 (D8)
+        , <&xiao_d 6 GPIO_ACTIVE_HIGH>   // GPIO1 (D6)
+        , <&xiao_d 2 GPIO_ACTIVE_HIGH>   // GPIO0 (D2)
+        ;
+
+    interrupt-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // gpio_interrupt (D7)
+};
+
+&encoder {
+    status = "okay";
+};
+
+/*
+ * Use compatibility with PAW3222 driver if available via west.yml
+ * The sekigon-gonnoc driver might use "pixart,paw3222" compatible string.
+ */
+&trackball {
+    // Override compatible if needed based on the external module
+    // compatible = "pixart,paw3222"; 
+};

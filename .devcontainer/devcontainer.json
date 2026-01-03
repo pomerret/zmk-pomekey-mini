@@ -1,0 +1,28 @@
+{
+  "name": "zmk_pomekey_mini",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "root",
+  "workspaceFolder": "/workspaces/zmk_pomekey_mini",
+  "mounts": [
+    "source=zmk_pomekey_mini-root-user,target=/root,type=volume",
+    "source=${localWorkspaceFolder},target=/workspaces/zmk_pomekey_mini,type=bind"
+  ],
+  "postCreateCommand": "bash .devcontainer/setup-west.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "files.associations": {
+          "*.keymap": "devicetree"
+        }
+      },
+      "extensions": [
+        "ms-vscode.makefile-tools",
+        "ms-azuretools.vscode-docker",
+        "spadin.zmk-tools"
+      ]
+    }
+  }
+}

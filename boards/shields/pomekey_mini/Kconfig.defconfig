@@ -1,0 +1,25 @@
+if SHIELD_POMEKEY_MINI_LEFT || SHIELD_POMEKEY_MINI_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "pomekey_mini"
+
+config NFCT_PINS_AS_GPIOS
+    default y
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_POINTING
+    default y
+
+# If using PAW3222 driver
+config PAW3222
+    default y
+
+config SPI
+    default y
+
+config INPUT
+    default y
+
+endif
