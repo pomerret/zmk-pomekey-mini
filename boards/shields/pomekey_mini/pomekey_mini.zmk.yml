@@ -3,7 +3,7 @@ id: pomekey_mini
 name: pomekey_mini
 type: shield
 url: https://github.com/pomerret/zmk-pomekey-mini
-requires: [seeeduino_xiao_ble]
+requires: [seeed_xiao_nrf52840]
 siblings:
   - pomekey_mini_left
   - pomekey_mini_right
