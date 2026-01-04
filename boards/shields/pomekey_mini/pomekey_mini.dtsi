@@ -29,14 +29,11 @@
         >;
     };
 
-    layouts {
-        compatible = "zmk,physical-layouts";
-        physical_layout0: physical_layout_0 {
-            compatible = "zmk,physical-layout";
-            display-name = "Default Layout";
-            transform = <&default_transform>;
-            kscan = <&kscan0>;
-        };
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
     };
 
     kscan0: kscan_0 {

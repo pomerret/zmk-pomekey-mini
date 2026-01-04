@@ -1,5 +1,12 @@
 config SHIELD_POMEKEY_MINI_LEFT
     def_bool $(shields_list_contains,pomekey_mini_left)
+    select SHIELD_POMEKEY_MINI
 
 config SHIELD_POMEKEY_MINI_RIGHT
     def_bool $(shields_list_contains,pomekey_mini_right)
+    select SHIELD_POMEKEY_MINI
+
+config SHIELD_POMEKEY_MINI
+    bool
+    select ZMK_KSCAN_CHARLIEPLEX
+    select ZMK_PHYSICAL_LAYOUTS
