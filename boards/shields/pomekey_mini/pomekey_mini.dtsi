@@ -41,6 +41,7 @@
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-charlieplex";
+        status = "okay";
         wakeup-source;
         gpios
             = <&xiao_d 0 GPIO_ACTIVE_HIGH>

@@ -12,8 +12,7 @@ config ZMK_SPLIT
 config ZMK_POINTING
     default y
 
-# Note: These values are already defined in ZMK/Zephyr Kconfig.
-# We just want to set their default values for this shield.
-# We use 'select' or just 'default' if the symbols are already visible.
+config KSCAN
+    default y
 
 endif
